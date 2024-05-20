@@ -1,5 +1,6 @@
 typedef struct Node {
     int info;
+    struct Node* prev;
     struct Node* next;
 } Node, *TNode;
 
@@ -9,3 +10,7 @@ typedef struct {
 } Lista, *TLista;
 
 TNode createNode(int value);
+void insertList(TLista list, int value);
+void freeList(TLista list);
+void insertListStart(TLista list, int value);
+TLista copyList(TLista list);
