@@ -1,5 +1,5 @@
 typedef struct Node {
-    int info;
+    float info;
     struct Node* prev;
     struct Node* next;
 } Node, *TNode;
@@ -9,8 +9,8 @@ typedef struct {
     TNode end;
 } Lista, *TLista;
 
-TNode createNode(int value);
-void insertList(TLista list, int value);
+TNode createNode(float value);
+void insertList(TLista list, float value);
 void freeList(TLista list);
-void insertListStart(TLista list, int value);
+void insertListStart(TLista list, float value);
 TLista copyList(TLista list);

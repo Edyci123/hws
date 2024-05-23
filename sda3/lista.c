@@ -1,7 +1,7 @@
 #include "lista.h"
 #include <stdlib.h>
 
-TNode initListNode(int value) {
+TNode initListNode(float value) {
     TNode newNode = (TNode) malloc(sizeof(Node));
     newNode->info = value;
     newNode->prev = NULL;
@@ -9,7 +9,7 @@ TNode initListNode(int value) {
     return newNode;
 }
 
-void insertList(TLista list, int value) {
+void insertList(TLista list, float value) {
     TNode newNode = initListNode(value);
     if (list->start == NULL) {
         list->start = list->end = newNode;
@@ -20,7 +20,7 @@ void insertList(TLista list, int value) {
     list->end = list->end->next;
 }
 
-void insertListStart(TLista list, int value) {
+void insertListStart(TLista list, float value) {
     TNode newNode = initListNode(value);
     if (list->start == NULL) {
         list->start = list->end = newNode;

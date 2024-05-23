@@ -1,0 +1,129 @@
+==88578== Conditional jump or move depends on uninitialised value(s)
+==88578==    at 0x10A2B5: insertList (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10950F: createRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109811: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Uninitialised value was created by a heap allocation
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109490: createRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109811: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== Conditional jump or move depends on uninitialised value(s)
+==88578==    at 0x10A339: insertListStart (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1096BA: createInverseOfRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10995D: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Uninitialised value was created by a heap allocation
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109650: createInverseOfRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10995D: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== Conditional jump or move depends on uninitialised value(s)
+==88578==    at 0x10A2B5: insertList (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10979F: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109C58: addOneYear (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093E9: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Uninitialised value was created by a heap allocation
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x10972B: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109C58: addOneYear (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093E9: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== Conditional jump or move depends on uninitialised value(s)
+==88578==    at 0x10A2B5: insertList (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10979F: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10A03A: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Uninitialised value was created by a heap allocation
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x10972B: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10A03A: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== Invalid write of size 8
+==88578==    at 0x10A077: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Address 0x4ac1648 is 24 bytes inside a block of size 25 alloc'd
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109FCB: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== Invalid read of size 1
+==88578==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x48E9D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==88578==    by 0x48D36C9: fprintf (fprintf.c:32)
+==88578==    by 0x109F23: showRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10A0F1: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==  Address 0x6169636e656c6156 is not stack'd, malloc'd or (recently) free'd
+==88578== 
+==88578== 
+==88578== Process terminating with default action of signal 11 (SIGSEGV)
+==88578==  General Protection Fault
+==88578==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x48E9D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==88578==    by 0x48D36C9: fprintf (fprintf.c:32)
+==88578==    by 0x109F23: showRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10A0F1: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 73 bytes in 9 blocks are definitely lost in loss record 7 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x491B58E: strdup (strdup.c:42)
+==88578==    by 0x10A076: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 129 bytes in 16 blocks are definitely lost in loss record 13 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x491B58E: strdup (strdup.c:42)
+==88578==    by 0x109472: createRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109811: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 135 bytes in 16 blocks are definitely lost in loss record 14 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x491B58E: strdup (strdup.c:42)
+==88578==    by 0x10962E: createInverseOfRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10995D: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 746 (192 direct, 554 indirect) bytes in 4 blocks are definitely lost in loss record 25 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x1096F6: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10A03A: showGraf (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109408: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 1,056 bytes in 128 blocks are definitely lost in loss record 27 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x491B58E: strdup (strdup.c:42)
+==88578==    by 0x109709: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109C58: addOneYear (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093E9: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 1,500 bytes in 15 blocks are definitely lost in loss record 30 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x10936B: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 1,500 bytes in 15 blocks are definitely lost in loss record 31 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109379: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 1,672 (256 direct, 1,416 indirect) bytes in 16 blocks are definitely lost in loss record 33 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109490: createRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109811: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 1,672 (256 direct, 1,416 indirect) bytes in 16 blocks are definitely lost in loss record 34 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x109650: createInverseOfRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x10995D: addRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093C8: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 
+==88578== 13,376 (2,048 direct, 11,328 indirect) bytes in 128 blocks are definitely lost in loss record 39 of 39
+==88578==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==88578==    by 0x10972B: copyRoute (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x109C58: addOneYear (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578==    by 0x1093E9: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==88578== 

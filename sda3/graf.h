@@ -7,11 +7,14 @@ typedef struct Route {
     TLista tronsoane;
     char isReversed;
     struct Route* next;
+    int isBad;
+    int order;
 } Route, *TRoute;
 
 
 typedef struct {
     int n;
+    int maxWear;
     char** cities;
     int noOfCities;
     TRoute* routes;
@@ -19,11 +22,14 @@ typedef struct {
 
 int getIndexForCity(Graf* graf, char* toFind);
 
-TRoute createRoute(char* cityD, int nrTronsoane, FILE* in);
+TRoute createRoute(char* cityD, int nrTronsoane, int order, FILE* in);
 
-Graf* initGraf();
+Graf* initGraf(int wear);
 
-void addRoute(Graf* graf, char* cityS, char* cityD, int nrTronsoane, FILE* in);
+void addRoute(Graf* graf, int order, char* cityS, char* cityD, int nrTronsoane, FILE* in);
 
 void addOneYear(Graf* graf);
 
+void showGraf(Graf* graf, FILE* out);
+
+void freeGraf(Graf* graf);
