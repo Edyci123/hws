@@ -7,3 +7,6 @@ Astfel in rezolvarea problemei am reconstruit toate rutele cu tronoanele updatat
 # Task2
 
 La aceasta cerinta am facut dijkstra pe arborele intial, am construit arborele format de algoritm, print-un vector de tati, iar apoi am eliminat cele mai departate noduri(prin indepartarea muhciei care ducea la el) pana cand ajungeam la numarul cerut de muchii, apoi le am afiat.
+
+
+### Local imi da maxim, dar idk de ce pe vm checker nu vrea :/

@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include "lista.h"
 #include <stdio.h>
 

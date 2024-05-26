@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 typedef struct Node {
     float info;
     struct Node* prev;

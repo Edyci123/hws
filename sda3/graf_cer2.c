@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include "graf_cer2.h"
 #include <stdlib.h>
 #include <string.h>
@@ -20,7 +21,7 @@ TGraf2 initGraf2() {
 // creaza o muchie
 TEdge createEdge(char* cityD, int cost, int idx) {
     TEdge newEdge = malloc(sizeof(Edge));
-    newEdge->cityD = strdup(cityD);
+    newEdge->cityD = (char*)strdup(cityD);
     newEdge->cost = cost;
     newEdge->next = NULL;
     newEdge->idx = idx;
@@ -54,7 +55,7 @@ void addEdge(Graf2* graf, char* cityS, char* cityD, int cost, int idxEdge) {
     if (idx == -1) {
         graf->noOfCities++;
         graf->cities = realloc(graf->cities, graf->noOfCities * sizeof(char*));
-        graf->cities[graf->noOfCities - 1] = strdup(cityS);
+        graf->cities[graf->noOfCities - 1] = (char*)strdup(cityS);
         idx = graf->noOfCities - 1;
         graf->edges = realloc(graf->edges, graf->noOfCities * sizeof(TEdge));
         graf->edges[graf->noOfCities - 1] = edge;
@@ -75,7 +76,7 @@ void addEdge(Graf2* graf, char* cityS, char* cityD, int cost, int idxEdge) {
     if (idx == -1) {
         graf->noOfCities++;
         graf->cities = realloc(graf->cities, graf->noOfCities * sizeof(char*));
-        graf->cities[graf->noOfCities - 1] = strdup(cityD);
+        graf->cities[graf->noOfCities - 1] = (char*)strdup(cityD);
         idx = graf->noOfCities - 1;
         graf->edges = realloc(graf->edges, graf->noOfCities * sizeof(TEdge));
         graf->edges[graf->noOfCities - 1] = edge1;

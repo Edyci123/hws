@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include "graf.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,7 +7,7 @@
 // creaza o ruta care are ca destinatie orasul cityD
 TRoute createRoute(char* cityD, int nrTronsoane, int order, FILE* in) {
     TRoute route = (TRoute)malloc(sizeof(Route));
-    route->cityD = strdup(cityD);
+    route->cityD = (char*)strdup(cityD);
     route->nrTronsoane = nrTronsoane;
     route->tronsoane = malloc(sizeof(Lista));
     route->isReversed = 0;
@@ -52,7 +53,7 @@ Graf* initGraf(int wear) {
 // face o ruta inversa, fiind neorientat
 TRoute createInverseOfRoute(TRoute route, char* city) {
     TRoute newRoute = malloc(sizeof(Route));
-    newRoute->cityD = strdup(city);
+    newRoute->cityD = (char*)strdup(city);
     newRoute->nrTronsoane = route->nrTronsoane;
     newRoute->tronsoane = malloc(sizeof(Lista));
 
@@ -74,7 +75,7 @@ TRoute createInverseOfRoute(TRoute route, char* city) {
 // copiaza contentul unei rute in alta noua
 TRoute copyRoute(TRoute route) {
     TRoute newRoute = malloc(sizeof(Route));
-    newRoute->cityD = strdup(route->cityD);
+    newRoute->cityD = (char*)strdup(route->cityD);
     newRoute->nrTronsoane = route->nrTronsoane;
     newRoute->tronsoane = malloc(sizeof(Lista));
 
@@ -99,7 +100,7 @@ void addRoute(Graf* graf, int order, char* cityS, char* cityD, int nrTronsoane, 
     if (idx == -1) {
        graf->noOfCities++;
        graf->cities = realloc(graf->cities, graf->noOfCities * sizeof(char*));
-       graf->cities[graf->noOfCities - 1] = strdup(cityS);
+       graf->cities[graf->noOfCities - 1] = (char*)strdup(cityS);
        idx = graf->noOfCities - 1;
        graf->routes = realloc(graf->routes, graf->noOfCities * sizeof(TRoute));
        graf->routes[graf->noOfCities - 1] = route;
@@ -116,7 +117,7 @@ void addRoute(Graf* graf, int order, char* cityS, char* cityD, int nrTronsoane, 
     if (idx == -1) {
        graf->noOfCities++;
        graf->cities = realloc(graf->cities, graf->noOfCities * sizeof(char*));
-       graf->cities[graf->noOfCities - 1] = strdup(cityD);
+       graf->cities[graf->noOfCities - 1] = (char*)strdup(cityD);
        idx = graf->noOfCities - 1;
        graf->routes = realloc(graf->routes, graf->noOfCities * sizeof(TRoute));
        graf->routes[graf->noOfCities - 1] = routeD;
@@ -150,7 +151,7 @@ void freeRoute(TRoute route) {
 
     TRoute route1 = route->next;
     free(route);
-    // freeList(route->tronsoane);
+    freeList(route->tronsoane);
     freeRoute(route1);
 }
 
@@ -257,7 +258,7 @@ void showGraf(Graf* graf, FILE* out) {
         while (route) {
             if (route->isReversed == 0) {
                 routes[route->order] = copyRoute(route);
-                citiesS[route->order] = strdup(graf->cities[i]);
+                citiesS[route->order] = (char*)strdup(graf->cities[i]);
                 len1++;
             }
             route = route->next;
@@ -283,10 +284,10 @@ void showGraf(Graf* graf, FILE* out) {
 }
 
 void freeGraf(Graf* graf) {
-    // freeRoutes(graf->routes, graf->noOfCities);
-    for (int i = 0; i < graf->noOfCities; i++) {
-        free(graf->cities[i]);
-    }
-    free(graf->cities);
-    free(graf);
+    freeRoutes(graf->routes, graf->noOfCities);
+    // for (int i = 0; i < graf->noOfCities; i++) {
+        // free(graf->cities[i]);
+    // }
+    // free(graf->cities);
+    // free(graf);
 }

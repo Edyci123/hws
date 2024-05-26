@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include <stdio.h>
 typedef struct Edge {
     char* cityD;

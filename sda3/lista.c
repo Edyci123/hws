@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include "lista.h"
 #include <stdlib.h>
 
@@ -45,13 +46,13 @@ TLista copyList(TLista list) {
 }
 
 void freeList(TLista list) {
-    TNode current = list->start;
-    TNode nextNode;
-    while (current != NULL) {
-        nextNode = current->next;
-        free(current);
-        current = nextNode;
-    }
+    // TNode current = list->start;
+    // TNode nextNode;
+    // while (current != NULL) {
+    //     nextNode = current->next;
+    //     free(current);
+    //     current = nextNode;
+    // }
     list->start = NULL;
-    list->end = NULL;
+    // list->end = NULL;
 }

@@ -1,3 +1,4 @@
+/* BIC CODRUT EDUARD - 312CB */
 #include <stdio.h>
 #include "graf.h"
 #include "graf_cer2.h"
@@ -38,7 +39,7 @@ int main(int argc, char* argv[]) {
 
         showGraf(graf, out);
 
-        freeGraf(graf);
+        // freeGraf(graf);
 
     } else {
         char* startCity = malloc(100 * sizeof(char));
