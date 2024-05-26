@@ -1,0 +1,9 @@
+# Task1
+
+La aceasta cerinta am folosit un graf in care aveam toate muchiile orasele, si numarul total de orase. Muhciile sale aveau ca informatii orasul destiantie, numarul de tronsoane si tronsoanele.
+Pe langa asta aveau numarul de ordine(pt. afisare) si o variabila daca zice ca e muchia inversata.
+Astfel in rezolvarea problemei am reconstruit toate rutele cu tronoanele updatate, iar apoi le inlocuiesc in graf.
+
+# Task2
+
+La aceasta cerinta am facut dijkstra pe arborele intial, am construit arborele format de algoritm, print-un vector de tati, iar apoi am eliminat cele mai departate noduri(prin indepartarea muhciei care ducea la el) pana cand ajungeam la numarul cerut de muchii, apoi le am afiat.

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// creaza o ruta care are ca destinatie orasul cityD
 TRoute createRoute(char* cityD, int nrTronsoane, int order, FILE* in) {
     TRoute route = (TRoute)malloc(sizeof(Route));
     route->cityD = strdup(cityD);
@@ -22,6 +23,7 @@ TRoute createRoute(char* cityD, int nrTronsoane, int order, FILE* in) {
     return route;
 }
 
+// ia indexul pentru un oras, intr un graf comparand numele
 int getIndexForCity(Graf* graf, char* toFind) {
     if (graf == NULL) {
         return -1;
@@ -35,7 +37,7 @@ int getIndexForCity(Graf* graf, char* toFind) {
     return -1;
 }
 
-
+// initializeaza graful, si seteaza uzura maxima
 Graf* initGraf(int wear) {
     Graf* newGraf = malloc(sizeof(Graf));
     newGraf->n = 0;
@@ -47,6 +49,7 @@ Graf* initGraf(int wear) {
     return newGraf;
 }
 
+// face o ruta inversa, fiind neorientat
 TRoute createInverseOfRoute(TRoute route, char* city) {
     TRoute newRoute = malloc(sizeof(Route));
     newRoute->cityD = strdup(city);
@@ -67,6 +70,8 @@ TRoute createInverseOfRoute(TRoute route, char* city) {
     return newRoute;
 }
 
+
+// copiaza contentul unei rute in alta noua
 TRoute copyRoute(TRoute route) {
     TRoute newRoute = malloc(sizeof(Route));
     newRoute->cityD = strdup(route->cityD);
@@ -87,6 +92,7 @@ TRoute copyRoute(TRoute route) {
     return newRoute;
 }
 
+// adauga o ruta si inversa ei
 void addRoute(Graf* graf, int order, char* cityS, char* cityD, int nrTronsoane, FILE* in) {
     int idx = getIndexForCity(graf, cityS);
     TRoute route = createRoute(cityD, nrTronsoane, order, in);
@@ -120,6 +126,7 @@ void addRoute(Graf* graf, int order, char* cityS, char* cityD, int nrTronsoane, 
     }
 }
 
+// gaseste uzura maxima de pe primul tronson de pe toate muhciile care sunt adiacente la nodul cu numele city;
 float findMaxRoute(Graf* graf, char* city) {
     float res = 0;
 
@@ -154,6 +161,8 @@ void freeRoutes(TRoute* routes, int nr) {
     free(routes);
 }
 
+
+// adauga un an de uzura
 void addOneYear(Graf* graf) {
     TRoute* route = malloc(graf->noOfCities * sizeof(TRoute));
 
@@ -236,6 +245,7 @@ void showRoute(TRoute route, char* cityS, FILE* out) {
     fprintf(out, "\n");
 }
 
+// afiseaza graful
 void showGraf(Graf* graf, FILE* out) {
     int len = 0;
     int len1 = 0;
