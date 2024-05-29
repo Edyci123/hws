@@ -1,36 +1,36 @@
-==326779== Use of uninitialised value of size 8
-==326779==    at 0x10970D: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779==  Uninitialised value was created by a heap allocation
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x1095F3: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 40 bytes in 1 blocks are definitely lost in loss record 2 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x109584: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 40 bytes in 1 blocks are definitely lost in loss record 3 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x10ABD9: dijkstra (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779==    by 0x109621: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 100 bytes in 1 blocks are definitely lost in loss record 11 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x109478: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 400 bytes in 1 blocks are definitely lost in loss record 14 of 19
-==326779==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x109630: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 1,000 bytes in 10 blocks are definitely lost in loss record 17 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x1094E5: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 1,000 bytes in 10 blocks are definitely lost in loss record 18 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x1094F3: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
-==326779== 1,235 (32 direct, 1,203 indirect) bytes in 1 blocks are definitely lost in loss record 19 of 19
-==326779==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==326779==    by 0x10A7D6: initGraf2 (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779==    by 0x1094CB: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
-==326779== 
+==15776== Use of uninitialised value of size 8
+==15776==    at 0x10970D: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776==  Uninitialised value was created by a heap allocation
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x1095F3: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 40 bytes in 1 blocks are definitely lost in loss record 2 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x109584: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 40 bytes in 1 blocks are definitely lost in loss record 3 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x10ABD9: dijkstra (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776==    by 0x109621: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 100 bytes in 1 blocks are definitely lost in loss record 11 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x109478: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 400 bytes in 1 blocks are definitely lost in loss record 14 of 19
+==15776==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x109630: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 1,000 bytes in 10 blocks are definitely lost in loss record 17 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x1094E5: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 1,000 bytes in 10 blocks are definitely lost in loss record 18 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x1094F3: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 
+==15776== 1,235 (32 direct, 1,203 indirect) bytes in 1 blocks are definitely lost in loss record 19 of 19
+==15776==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==15776==    by 0x10A7D6: initGraf2 (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776==    by 0x1094CB: main (in /home/bimmer/Desktop/Stuff/hws/sda3/tema3)
+==15776== 

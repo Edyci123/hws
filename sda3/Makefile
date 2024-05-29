@@ -1,5 +1,5 @@
 build:
-	gcc -Wall -std=c11 -Wextra -o tema3 tema3.c graf.c lista.c graf_cer2.c
+	gcc -Wall -Wextra -o tema3 tema3.c graf.c lista.c graf_cer2.c
 
 run: build
 	./tema3
