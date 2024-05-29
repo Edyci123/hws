@@ -11,6 +11,6 @@ check_parantheses:
     mov ebp, esp
 
     ; sa-nceapa concursul
-
+da vere chiar asa e
     leave
     ret
